@@ -24,3 +24,17 @@ Sales Trends
 These insights empower stakeholders with key business metrics, enabling strategic decision-making.
 
 For more details, refer to docs/requirements.md.
+
+
+
+
+
+
+
+
+
+
+
+
+🛡️ License
+This project is licensed under the MIT License. You are free to use, modify, and share this project with proper attribution.
