@@ -371,48 +371,6 @@ sql-data-warehouse-project/
 
 ---
 
-# 📊 Example Business Analysis
-
-## Total Sales by Country
-
-```sql
-SELECT 
-    dc.country,
-    SUM(fs.sales_amount) AS total_sales
-FROM gold.fact_sales fs
-JOIN gold.dim_customers dc
-ON fs.customer_key = dc.customer_key
-GROUP BY dc.country;
-```
-
----
-
-## Top Selling Products
-
-```sql
-SELECT 
-    dp.product_name,
-    SUM(fs.quantity) AS total_quantity
-FROM gold.fact_sales fs
-JOIN gold.dim_products dp
-ON fs.product_key = dp.product_key
-GROUP BY dp.product_name;
-```
-
----
-
-# 🚀 Future Improvements
-
-- Incremental Loading
-- Slowly Changing Dimensions (SCD)
-- Azure Data Factory Integration
-- Power BI Dashboards
-- Pipeline Monitoring
-- Data Quality Framework
-- CI/CD Automation
-
----
-
 # 🛡️ License
 
 This project is licensed under the MIT License.
