@@ -1,40 +1,87 @@
-Welcome to the Data Warehouse and Analytics Project repository! 🚀
+# Modern SQL Data Warehouse Project
 
-This project demonstrates a comprehensive data warehousing and analytics solution, from building a data warehouse to generating actionable insights. Designed as a portfolio project, it highlights industry best practices in data engineering and analytics.
+## Overview
 
+This project demonstrates the implementation of a modern SQL Data Warehouse using SQL Server and Medallion Architecture principles.
 
-🚀 Project Requirements
-Building the Data Warehouse (Data Engineering)
-Objective
+The solution consolidates data from multiple business systems (ERP and CRM), transforms raw datasets into analytical-ready structures, and delivers a clean and scalable data model for reporting and business intelligence.
+
+The project focuses on:
+- Data ingestion
+- ETL pipeline development
+- Data cleansing
+- Data standardization
+- Data integration
+- Dimensional modeling
+- Analytical reporting structures
+
+---
+
+# Project Requirements
+
+## Objective
+
 Develop a modern data warehouse using SQL Server to consolidate sales data, enabling analytical reporting and informed decision-making.
 
-Specifications
-Data Sources: Import data from two source systems (ERP and CRM) provided as CSV files.
-Data Quality: Cleanse and resolve data quality issues prior to analysis.
-Integration: Combine both sources into a single, user-friendly data model designed for analytical queries.
-Scope: Focus on the latest dataset only; historization of data is not required.
-Documentation: Provide clear documentation of the data model to support both business stakeholders and analytics teams.
-BI: Analytics & Reporting (Data Analysis)
-Objective
-Develop SQL-based analytics to deliver detailed insights into:
+---
 
-Customer Behavior
-Product Performance
-Sales Trends
-These insights empower stakeholders with key business metrics, enabling strategic decision-making.
+## Specifications
 
-For more details, refer to docs/requirements.md.
+### Data Sources
+Import data from two source systems:
+- ERP System
+- CRM System
 
+Source data is provided as CSV files.
 
+---
 
+### Data Quality
+Clean and resolve data quality issues before loading data into analytical layers.
 
+Examples:
+- Remove duplicate records
+- Handle null values
+- Standardize inconsistent data
+- Trim unwanted spaces
+- Validate business rules
 
+---
 
+### Data Integration
+Combine ERP and CRM datasets into a unified and business-friendly analytical model.
 
+---
 
+### Scope
+- Process only the latest available dataset
+- No historization or Slowly Changing Dimensions (SCD)
+- Full load processing approach
 
+---
 
+### Documentation
+Provide clear and structured documentation for:
+- Data model
+- ETL processes
+- Layer architecture
+- Business entities
 
+---
 
-🛡️ License
-This project is licensed under the MIT License. You are free to use, modify, and share this project with proper attribution.
+# Architecture
+
+## Medallion Architecture
+
+The project follows a three-layer Medallion Architecture approach:
+
+```text
+ERP + CRM Sources
+        ↓
+    Bronze Layer
+        ↓
+    Silver Layer
+        ↓
+     Gold Layer
+        ↓
+Analytics & Reporting
