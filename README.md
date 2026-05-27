@@ -340,10 +340,10 @@ sql-data-warehouse-project/
 │   ├── silver/
 │   └── gold/
 │
-|── tests/
-|   ├── quality_checks_gold.sql
-|   ├── quality_checks_silver.sql
-|
+├── tests/
+│   ├── quality_checks_gold.sql/
+│   └── quality_check_silver.sql/
+│
 ├── docs/
 │   ├── data_catalog.md
 │   └── architecture.png
