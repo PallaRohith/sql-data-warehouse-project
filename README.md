@@ -194,14 +194,6 @@ TRIM(cst_firstname)
 
 ---
 
-## Example Silver Tables
-
-```sql
-silver.crm_cust_info
-silver.crm_prd_info
-silver.crm_sales_details
-```
-
 ---
 
 # 🥇 Gold Layer
