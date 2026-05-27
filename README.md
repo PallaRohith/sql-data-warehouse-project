@@ -192,7 +192,6 @@ COALESCE(column_name, 'n/a')
 TRIM(cst_firstname)
 ```
 
----
 
 ---
 
@@ -341,6 +340,10 @@ sql-data-warehouse-project/
 │   ├── silver/
 │   └── gold/
 │
+|── tests/
+|   ├── quality_checks_gold.sql
+|   ├── quality_checks_silver.sql
+|
 ├── docs/
 │   ├── data_catalog.md
 │   └── architecture.png
