@@ -328,28 +328,23 @@ Processes:
 
 # 📂 Project Structure
 
-```bash
+```text
 sql-data-warehouse-project/
-│
 ├── datasets/
 │   ├── source_crm/
 │   └── source_erp/
-│
-│── docs/
+├── docs/
 │   ├── data_catalog.md
 │   └── architecture.png
-│
 ├── scripts/
 │   ├── bronze/
 │   ├── silver/
 │   └── gold/
-│
 ├── tests/
-│   ├── quality_checks_gold.sql/
-│   └── quality_check_silver.sql/
-│
-├── README.md
-└── LICENSE
+│   ├── quality_check_silver.sql
+│   └── quality_checks_gold.sql
+├── LICENSE
+└── README.md
 ```
 
 ---
