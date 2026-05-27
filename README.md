@@ -335,6 +335,10 @@ sql-data-warehouse-project/
 │   ├── source_crm/
 │   └── source_erp/
 │
+│── docs/
+│   ├── data_catalog.md
+│   └── architecture.png
+│
 ├── scripts/
 │   ├── bronze/
 │   ├── silver/
@@ -343,10 +347,6 @@ sql-data-warehouse-project/
 ├── tests/
 │   ├── quality_checks_gold.sql/
 │   └── quality_check_silver.sql/
-│
-├── docs/
-│   ├── data_catalog.md
-│   └── architecture.png
 │
 ├── README.md
 └── LICENSE
