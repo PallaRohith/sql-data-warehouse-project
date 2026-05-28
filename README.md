@@ -44,8 +44,6 @@ The project follows a layered Medallion Architecture approach:
 
 ```
 
----
-
 # 🎯 Project Requirements
 
 ## Objective
