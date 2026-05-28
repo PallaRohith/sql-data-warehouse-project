@@ -29,43 +29,18 @@ The project simulates a real-world **Data Engineering pipeline** involving:
 
 ---
 
+```md
 # 🏗️ Architecture
 
 ## Medallion Architecture
 
 The project follows a layered Medallion Architecture approach:
 
-```text
-                 ┌─────────────────┐
-                 │   CRM SYSTEM    │
-                 └────────┬────────┘
-                          │
-                 ┌────────▼────────┐
-                 │   ERP SYSTEM    │
-                 └────────┬────────┘
-                          │
-             ┌────────────▼────────────┐
-             │      BRONZE LAYER       │
-             │    Raw Source Data      │
-             └────────────┬────────────┘
-                          │
-             ┌────────────▼────────────┐
-             │      SILVER LAYER       │
-             │ Cleaned & Standardized  │
-             └────────────┬────────────┘
-                          │
-             ┌────────────▼────────────┐
-             │       GOLD LAYER        │
-             │ Business Ready Model    │
-             └────────────┬────────────┘
-                          │
-               ┌──────────▼──────────┐
-               │ Analytics & Reports │
-               └─────────────────────┘
-
 <p align="center">
-  <img src="docs/architecture.png" width="1000"/>
+  <img src="docs/architecture.png" alt="Data Warehouse Architecture" width="1000"/>
 </p>
+```
+
 
 ```
 
