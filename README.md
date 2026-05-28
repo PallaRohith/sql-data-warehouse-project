@@ -62,6 +62,11 @@ The project follows a layered Medallion Architecture approach:
                ┌──────────▼──────────┐
                │ Analytics & Reports │
                └─────────────────────┘
+
+<p align="center">
+  <img src="docs/architecture.png" width="1000"/>
+</p>
+
 ```
 
 ---
