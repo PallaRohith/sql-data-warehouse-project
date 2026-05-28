@@ -27,8 +27,8 @@ The project simulates a real-world **Data Engineering pipeline** involving:
 - Analytical Data Modeling
 - Star Schema Design
 
+---
 
-```md
 # 🏗️ Architecture
 
 ## Medallion Architecture
@@ -38,7 +38,8 @@ The project follows a layered Medallion Architecture approach:
 <p align="center">
   <img src="docs/architecture.png" alt="Data Warehouse Architecture" width="1000"/>
 </p>
-```
+
+---
 
 # 🎯 Project Requirements
 
@@ -114,6 +115,7 @@ The Bronze Layer stores raw source data exactly as received from the source syst
 - TRUNCATE + LOAD
 - Raw file ingestion
 
+---
 
 # 🥈 Silver Layer
 
@@ -165,7 +167,6 @@ COALESCE(column_name, 'n/a')
 ```sql
 TRIM(cst_firstname)
 ```
-
 
 ---
 
