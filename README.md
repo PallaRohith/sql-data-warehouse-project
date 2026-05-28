@@ -27,7 +27,6 @@ The project simulates a real-world **Data Engineering pipeline** involving:
 - Analytical Data Modeling
 - Star Schema Design
 
----
 
 ```md
 # 🏗️ Architecture
@@ -39,9 +38,6 @@ The project follows a layered Medallion Architecture approach:
 <p align="center">
   <img src="docs/architecture.png" alt="Data Warehouse Architecture" width="1000"/>
 </p>
-```
-
-
 ```
 
 # 🎯 Project Requirements
